@@ -1,0 +1,28 @@
+{
+  "name": "mixins",
+  "version": "1.0.0",
+  "description": "Collection of useful mixins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adahei/mixins.git"
+  },
+  "keywords": [
+    "SCSS",
+    "mixin"
+  ],
+  "author": "Adam Heidmark <adam@heidmark.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adahei/mixins/issues"
+  },
+  "homepage": "https://github.com/adahei/mixins#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
