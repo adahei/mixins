@@ -1,0 +1,43 @@
+
+//
+// FONT SIZE RATIO
+// -------------------------
+// Give headings and fonts a font size
+// based on some common ratios
+//
+// Ratios are fetched from: http://type-scale.com/
+
+
+// Ratios
+$ratios: (
+  "golden":           1.618,
+  "perfectFifth":     (3/2),
+  "agumentedFourth":  1.414,
+  "perfectFourth":    (4/3),
+  "majorThrid":       (5/4),
+  "minorThird":       (6/5),
+  "majorSecond":      (9/8),
+  "minorSecond":      (16/15)
+);
+
+@mixin ratio($ratioName) {
+  $ratio: map-get($ratios, $ratioName);
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: ((7rem - $i) * $ratio);
+      line-height: 1;
+      margin-top: .2em;
+      margin-bottom: .1em;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0 0 .5rem 0;
+  }
+
+  small {
+    font-size: 1rem / $ratio;
+  }
+}

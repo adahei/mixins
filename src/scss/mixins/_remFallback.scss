@@ -1,0 +1,10 @@
+
+@function calcRem($size) {
+  $remSize: $size / 16px; // The pixel value is the base font size on page.
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calcRem($size);
+}

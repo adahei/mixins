@@ -1,14 +1,12 @@
-html, body {
-  margin: 0;
-  padding: 0; }
+html {
+  font-size: 14px; }
 
 body {
-  font: normal normal 16px/1.3rem "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0 2rem; }
+  font: normal normal 1rem/1.3rem "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .section {
   padding: .75rem;
-  margin-bottom: .5rem; }
+  margin-bottom: 1rem; }
 
 .section-contrast-dark {
   background-color: #333;
@@ -32,3 +30,54 @@ body {
   @media (max-width: 420px) {
     .breakpoint-box:before {
       content: "Small breakpoint"; } }
+
+.remFallback h2 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+.remFallback p.lead {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+h1 {
+  font-size: 6.75rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+h2 {
+  font-size: 5.625rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+h3 {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+h4 {
+  font-size: 3.375rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+h5 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: .1em; }
+
+p {
+  font-size: 1rem;
+  margin: 0 0 .5rem 0; }
+
+small {
+  font-size: 0.88889rem; }
